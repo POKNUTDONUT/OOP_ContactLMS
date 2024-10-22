@@ -29,7 +29,18 @@ namespace OOP_ContactLMS
 
         private void materialButton1_Click(object sender, EventArgs e)
         {
-            // Add a new contact
+            // Validate that none of the required fields are empty
+            if (string.IsNullOrWhiteSpace(firstName.Text) ||
+                string.IsNullOrWhiteSpace(lastName.Text) ||
+                string.IsNullOrWhiteSpace(email.Text) ||
+                string.IsNullOrWhiteSpace(phoneNumber.Text))
+            {
+                MessageBox.Show("Please fill in all the required fields: First Name, Last Name, Email, and Phone Number.",
+                                "Input Required", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return; // Stop further execution if validation fails
+            }
+
+            // Add a new contact if all fields are filled
             contactDB.AddContact(
                 firstName.Text,
                 lastName.Text,
@@ -38,9 +49,13 @@ namespace OOP_ContactLMS
                 companyName.Text,
                 address.Text
             );
+
             // Reload contacts
             LoadContacts();
+
             MessageBox.Show("Contact added successfully!");
+
+            // Clear input fields
             ClearFields();
         }
 

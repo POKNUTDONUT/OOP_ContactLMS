@@ -35,10 +35,11 @@ namespace OOP_ContactLMS
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ViewContactsControl));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.foxLabel1 = new ReaLTaiizor.Controls.FoxLabel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.totalContacts = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -61,10 +62,12 @@ namespace OOP_ContactLMS
             this.bigTextBox1 = new ReaLTaiizor.Controls.BigTextBox();
             this.contactsTableAdapter = new OOP_ContactLMS.ContactLMSDataSetTableAdapters.ContactsTableAdapter();
             this.contactsBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.foxLabel1 = new ReaLTaiizor.Controls.FoxLabel();
             this.hopePictureBox1 = new ReaLTaiizor.Controls.HopePictureBox();
             this.hopePictureBox2 = new ReaLTaiizor.Controls.HopePictureBox();
             this.hopePictureBox3 = new ReaLTaiizor.Controls.HopePictureBox();
+            this.foxLabel2 = new ReaLTaiizor.Controls.FoxLabel();
+            this.foxLabel3 = new ReaLTaiizor.Controls.FoxLabel();
+            this.foxLabel4 = new ReaLTaiizor.Controls.FoxLabel();
             this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -83,6 +86,9 @@ namespace OOP_ContactLMS
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.foxLabel4);
+            this.panel1.Controls.Add(this.foxLabel3);
+            this.panel1.Controls.Add(this.foxLabel2);
             this.panel1.Controls.Add(this.hopePictureBox3);
             this.panel1.Controls.Add(this.hopePictureBox2);
             this.panel1.Controls.Add(this.hopePictureBox1);
@@ -92,6 +98,17 @@ namespace OOP_ContactLMS
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(788, 183);
             this.panel1.TabIndex = 0;
+            // 
+            // foxLabel1
+            // 
+            this.foxLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.foxLabel1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.foxLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(88)))), ((int)(((byte)(100)))));
+            this.foxLabel1.Location = new System.Drawing.Point(414, 21);
+            this.foxLabel1.Name = "foxLabel1";
+            this.foxLabel1.Size = new System.Drawing.Size(237, 19);
+            this.foxLabel1.TabIndex = 2;
+            this.foxLabel1.Text = "Meet The Project Contributors";
             // 
             // panel5
             // 
@@ -156,7 +173,7 @@ namespace OOP_ContactLMS
             this.materialButton2.HighEmphasis = true;
             this.materialButton2.Icon = null;
             this.materialButton2.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
-            this.materialButton2.Location = new System.Drawing.Point(367, 242);
+            this.materialButton2.Location = new System.Drawing.Point(350, 244);
             this.materialButton2.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.materialButton2.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
             this.materialButton2.Name = "materialButton2";
@@ -175,19 +192,19 @@ namespace OOP_ContactLMS
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AllowUserToResizeColumns = false;
             this.dataGridView1.AllowUserToResizeRows = false;
-            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.Black;
-            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Black;
+            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(12)))), ((int)(((byte)(45)))));
-            dataGridViewCellStyle16.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle16.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle16;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(12)))), ((int)(((byte)(45)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.contactIDDataGridViewTextBoxColumn,
@@ -199,7 +216,7 @@ namespace OOP_ContactLMS
             this.addressDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.contactsBindingSource;
             this.dataGridView1.EnableHeadersVisualStyles = false;
-            this.dataGridView1.Location = new System.Drawing.Point(53, 39);
+            this.dataGridView1.Location = new System.Drawing.Point(37, 39);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersVisible = false;
@@ -331,27 +348,15 @@ namespace OOP_ContactLMS
             this.contactsBindingSource1.DataMember = "Contacts";
             this.contactsBindingSource1.DataSource = this.contactLMSDataSetBindingSource;
             // 
-            // foxLabel1
-            // 
-            this.foxLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.foxLabel1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.foxLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(88)))), ((int)(((byte)(100)))));
-            this.foxLabel1.Location = new System.Drawing.Point(509, 21);
-            this.foxLabel1.Name = "foxLabel1";
-            this.foxLabel1.Size = new System.Drawing.Size(121, 24);
-            this.foxLabel1.TabIndex = 2;
-            this.foxLabel1.Text = "Meet The Creators";
-            this.foxLabel1.Click += new System.EventHandler(this.foxLabel1_Click);
-            // 
             // hopePictureBox1
             // 
             this.hopePictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(196)))), ((int)(((byte)(204)))));
             this.hopePictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("hopePictureBox1.Image")));
-            this.hopePictureBox1.Location = new System.Drawing.Point(323, 62);
+            this.hopePictureBox1.Location = new System.Drawing.Point(316, 55);
             this.hopePictureBox1.Name = "hopePictureBox1";
             this.hopePictureBox1.PixelOffsetType = System.Drawing.Drawing2D.PixelOffsetMode.HighQuality;
-            this.hopePictureBox1.Size = new System.Drawing.Size(139, 87);
-            this.hopePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.hopePictureBox1.Size = new System.Drawing.Size(118, 103);
+            this.hopePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.hopePictureBox1.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             this.hopePictureBox1.TabIndex = 3;
             this.hopePictureBox1.TabStop = false;
@@ -361,11 +366,11 @@ namespace OOP_ContactLMS
             // 
             this.hopePictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(196)))), ((int)(((byte)(204)))));
             this.hopePictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("hopePictureBox2.Image")));
-            this.hopePictureBox2.Location = new System.Drawing.Point(481, 62);
+            this.hopePictureBox2.Location = new System.Drawing.Point(475, 55);
             this.hopePictureBox2.Name = "hopePictureBox2";
             this.hopePictureBox2.PixelOffsetType = System.Drawing.Drawing2D.PixelOffsetMode.HighQuality;
-            this.hopePictureBox2.Size = new System.Drawing.Size(126, 87);
-            this.hopePictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.hopePictureBox2.Size = new System.Drawing.Size(118, 103);
+            this.hopePictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.hopePictureBox2.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             this.hopePictureBox2.TabIndex = 4;
             this.hopePictureBox2.TabStop = false;
@@ -375,15 +380,48 @@ namespace OOP_ContactLMS
             // 
             this.hopePictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(196)))), ((int)(((byte)(204)))));
             this.hopePictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("hopePictureBox3.Image")));
-            this.hopePictureBox3.Location = new System.Drawing.Point(630, 62);
+            this.hopePictureBox3.Location = new System.Drawing.Point(640, 55);
             this.hopePictureBox3.Name = "hopePictureBox3";
             this.hopePictureBox3.PixelOffsetType = System.Drawing.Drawing2D.PixelOffsetMode.HighQuality;
-            this.hopePictureBox3.Size = new System.Drawing.Size(128, 87);
-            this.hopePictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.hopePictureBox3.Size = new System.Drawing.Size(118, 103);
+            this.hopePictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.hopePictureBox3.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             this.hopePictureBox3.TabIndex = 5;
             this.hopePictureBox3.TabStop = false;
             this.hopePictureBox3.TextRenderingType = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            // 
+            // foxLabel2
+            // 
+            this.foxLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.foxLabel2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.foxLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(88)))), ((int)(((byte)(100)))));
+            this.foxLabel2.Location = new System.Drawing.Point(350, 139);
+            this.foxLabel2.Name = "foxLabel2";
+            this.foxLabel2.Size = new System.Drawing.Size(52, 19);
+            this.foxLabel2.TabIndex = 6;
+            this.foxLabel2.Text = "CABICO";
+            // 
+            // foxLabel3
+            // 
+            this.foxLabel3.BackColor = System.Drawing.Color.Transparent;
+            this.foxLabel3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.foxLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(88)))), ((int)(((byte)(100)))));
+            this.foxLabel3.Location = new System.Drawing.Point(498, 139);
+            this.foxLabel3.Name = "foxLabel3";
+            this.foxLabel3.Size = new System.Drawing.Size(65, 19);
+            this.foxLabel3.TabIndex = 7;
+            this.foxLabel3.Text = "POSADAS";
+            // 
+            // foxLabel4
+            // 
+            this.foxLabel4.BackColor = System.Drawing.Color.Transparent;
+            this.foxLabel4.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.foxLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(88)))), ((int)(((byte)(100)))));
+            this.foxLabel4.Location = new System.Drawing.Point(661, 139);
+            this.foxLabel4.Name = "foxLabel4";
+            this.foxLabel4.Size = new System.Drawing.Size(70, 19);
+            this.foxLabel4.TabIndex = 8;
+            this.foxLabel4.Text = "SABUCIDO";
             // 
             // ViewContactsControl
             // 
@@ -482,6 +520,9 @@ namespace OOP_ContactLMS
         private HopePictureBox hopePictureBox3;
         private HopePictureBox hopePictureBox2;
         private HopePictureBox hopePictureBox1;
+        private FoxLabel foxLabel4;
+        private FoxLabel foxLabel3;
+        private FoxLabel foxLabel2;
 
         // Example contact class to hold the contact information (replace this with your actual data structure)
         public class Contact
